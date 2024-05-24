@@ -30,8 +30,7 @@ int main()
     }
 
     double total = 0.0;
-    // while (capacity > 0) {
-    // {
+    
     for (const auto &it : items)
     {
         if (it.weight <= capacity)
