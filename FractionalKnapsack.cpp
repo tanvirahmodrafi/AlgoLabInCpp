@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-struct item
-{
+struct item{
     int weight;
     int profit;
     double uniteprice;
@@ -16,12 +15,13 @@ int main()
 {
     int profit[] = {5, 10, 15, 7, 8, 9, 4};
     int weight[] = {1, 3, 5, 4, 1, 3, 2};
-    int capacity = 15;
+    int capacity = 16;
     vector<item> items;
     for (int i = 0; i < 7; i++)
     {
         items.push_back(item(weight[i], profit[i]));
     }
+
     sort(items.begin(), items.end());
 
     for (const auto &it : items)
@@ -44,6 +44,5 @@ int main()
             break;
         }
     }
-
     cout << total << endl;
 }
